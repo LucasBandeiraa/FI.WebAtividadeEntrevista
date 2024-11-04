@@ -1,0 +1,54 @@
+﻿﻿<div class="modal fade" id="meuModal" tabindex="-1" role="dialog" aria-labelledby="meuModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="meuModalLabel">Beneficiários</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <form id="formIncluirBenef" class="form-inline" method="POST">
+
+                    <div class="form-group mx-sm-3 mb-4">
+                        <label for="" class="cpfInput">CPF :</label>
+                        <input type="text" class="form-control" id="cpfBenef" name="CPF" placeholder="Ex.: 000.000.000-00" maxlength="14">
+                    </div>
+
+                    <div class="form-group mx-sm-3 mb-4">
+                        <label for="" class="nameInput">Nome :</label>
+                        <input type="text" class="form-control" id="nomeBenef" name="Nome" placeholder="Ex: Maria">
+                    </div>
+
+                    <div class="form-group mx-sm-3 mb-4">
+                        <div class="modalButtons">
+                            <button type="submit" id="Incluir" class="btn btn-success">Incluir</button>
+                            <button type="button" id="Salvar" class="btn btn-success" onclick="AtualizarTabela()">Salvar</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="row">
+
+                <table id="gridBenef" class="table">
+                    <thead>
+                        <tr>
+                            <td>Nome</td>
+                            <td> CPF</td>
+                            <td>Ações</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+</div>
